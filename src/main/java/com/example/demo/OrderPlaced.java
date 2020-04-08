@@ -2,6 +2,7 @@ package com.example.demo;
 
 public class OrderPlaced {
     String eventType;
+    Long orderId;
     int qty;
     Long productId;
     String productName;
@@ -16,6 +17,14 @@ public class OrderPlaced {
 
     public void setEventType(String eventType) {
         this.eventType = eventType;
+    }
+
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
     }
 
     public int getQty() {
